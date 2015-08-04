@@ -1,0 +1,25 @@
+{
+  "name": "react-native-transparent-bar",
+  "version": "0.0.1",
+  "description": "react native navigator transparent bar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/23c/react-native-transparent-bar.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "transparent",
+    "bar"
+  ],
+  "author": "23c",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/23c/react-native-transparent-bar/issues"
+  },
+  "homepage": "https://github.com/23c/react-native-transparent-bar#readme"
+}
