@@ -1,18 +1,26 @@
 'use strict';
-var React = require('react-native');
-var {StyleSheet, AppRegistry, Dimensions, requireNativeComponent} = React;
-var NavigatorTransparentBar = React.createClass({
+
+import React from 'react';
+
+import {
+  StyleSheet,
+  requireNativeComponent,
+} from 'react-native';
+
+const NavigatorTransparentBar = React.createClass({
   render: function(){
     return(
       <Overlay isVisible={true} style={styles.container} pointerEvents="none" aboveStatusBar={false}
-       >
-       {React.Children.map(this.props.children,React.addons.cloneWithProps)} 
-       </Overlay>
+      >
+        {React.Children.map(this.props.children, React.addons.cloneWithProps)}
+      </Overlay>
     );
   }
 });
-var Overlay = requireNativeComponent('Overlay', NavigatorTransparentBar);
-var styles = StyleSheet.create({
+
+const Overlay = requireNativeComponent('Overlay', NavigatorTransparentBar);
+
+const styles = StyleSheet.create({
   container: {
     position:'absolute',
     top:0,
@@ -27,4 +35,5 @@ var styles = StyleSheet.create({
     paddingTop: 1,
   },
 });
-module.exports = NavigatorTransparentBar;
+
+export default NavigatorTransparentBar;
